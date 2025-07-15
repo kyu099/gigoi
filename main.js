@@ -87,9 +87,12 @@ function draw(ctx) {
     }
     ctx.fillStyle = "white"
     ctx.font = '64px sans-serif';
-    ctx.fillText("シルバー空き: " + String((4 - countSilverPlayers())/2), 200, 820);
-    ctx.fillText("ゴールド空き: " + String((4 - countGoldPlayers())/2), 200, 900);
-    ctx.fillText("待ち: " + String(waiting.length), 455, 980);
+    ctx.fillText("シルバー空き", 200, 820);
+    ctx.fillText("：" + String((4 - countSilverPlayers())/2), 570, 820);
+    ctx.fillText("ゴールド空き", 200, 900);
+    ctx.fillText("：" + String((4 - countGoldPlayers())/2), 570, 900);
+    ctx.fillText("待ち", 455, 980);
+    ctx.fillText("：" + String(waiting.length), 570, 980);
     ctx.strokeRect(0, 0, canvas.width, canvas.height);
 }
 
